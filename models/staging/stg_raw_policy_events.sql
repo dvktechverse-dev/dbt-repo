@@ -1,0 +1,8 @@
+select
+EVENT_ID,
+FILE_NAME,
+LOAD_TS,
+POLICY_REF,
+EVENT_TYPE,
+EVENT_JSON
+from {{ source('raw','RAW_POLICY_EVENTS') }}

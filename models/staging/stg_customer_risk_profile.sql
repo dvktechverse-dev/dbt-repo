@@ -1,0 +1,7 @@
+select
+CUSTOMER_ID,
+AGE_GROUP,
+RISK_SCORE,
+CITY_CODE,
+LAST_UPDATED_TS
+from {{ source('raw','CUSTOMER_RISK_PROFILE') }}

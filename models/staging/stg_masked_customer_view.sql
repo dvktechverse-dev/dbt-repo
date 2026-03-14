@@ -1,0 +1,5 @@
+select
+CUSTOMER_ID,
+MASKED_NAME,
+MASKED_PHONE
+from {{ source('raw','MASKED_CUSTOMER_VIEW') }}
