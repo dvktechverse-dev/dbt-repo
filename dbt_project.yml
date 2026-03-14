@@ -40,3 +40,11 @@ models:
     staging:
       +schema: STAGING
       +materialized: table
+
+    intermediate:
+      +schema: STAGING
+      +materialized: table
+
+    marts:
+      +schema: MART
+      +materialized: table
